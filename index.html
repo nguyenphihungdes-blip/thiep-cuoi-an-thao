@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153d32">
+  <meta name="description" content="Thiệp cưới của Bùi Văn An và Tô Thị Thu Thảo — tháng 10 năm 2026.">
+  <meta property="og:title" content="An & Thảo — Wedding Invitation">
+  <meta property="og:description" content="Trân trọng kính mời bạn đến chung vui cùng gia đình chúng tôi.">
+  <meta property="og:image" content="assets/images/photo-11.jpg">
+  <title>An & Thảo — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="opening" id="opening" aria-label="Mở thiệp cưới">
+    <div class="opening__photo"></div>
+    <div class="opening__veil"></div>
+    <div class="opening__content">
+      <span class="eyebrow">Wedding invitation</span>
+      <h1>An <i>&</i> Thảo</h1>
+      <p>Tháng 10 · 2026</p>
+      <button class="open-card" id="openCard" type="button">
+        <span>Mở thiệp</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <small>Chạm để mở thiệp và phát nhạc</small>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a class="monogram" href="#top" aria-label="Về đầu trang">A<span>&</span>T</a>
+      <div class="nav__links">
+        <a href="#invitation">Lời mời</a>
+        <a href="#events">Hôn lễ</a>
+        <a href="#gallery">Album</a>
+      </div>
+    </nav>
+    <div class="hero__shade"></div>
+    <div class="hero__content reveal">
+      <p class="eyebrow">Save our date</p>
+      <h1>Bùi Văn An <span>&</span> Tô Thị Thu Thảo</h1>
+      <div class="hero__date"><span>18</span><i>·</i><span>10</span><i>·</i><span>2026</span></div>
+      <a class="scroll-cue" href="#invitation">Khám phá <span>↓</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="invitation section" id="invitation">
+      <div class="botanical botanical--left" aria-hidden="true"></div>
+      <div class="section-heading reveal">
+        <span class="eyebrow">We are getting married</span>
+        <h2>Trân trọng kính mời</h2>
+        <p>Sự hiện diện của bạn là niềm vinh hạnh và là món quà ý nghĩa nhất trong ngày vui của chúng tôi.</p>
+      </div>
+
+      <div class="families reveal">
+        <article>
+          <span>Nhà trai</span>
+          <h3>Ông Bùi Văn Tâm</h3>
+          <h3>Bà Hồ Thị Trâm</h3>
+        </article>
+        <div class="families__seal" aria-hidden="true"><span>A</span><i>&</i><span>T</span></div>
+        <article>
+          <span>Nhà gái</span>
+          <h3>Ông Tô Duy Lưu</h3>
+          <h3>Bà Hồ Bảo Hoa</h3>
+        </article>
+      </div>
+
+      <div class="portrait-pair reveal">
+        <figure class="portrait portrait--back"><img src="assets/images/photo-06.jpg" alt="Chú rể trao nụ hôn lên trán cô dâu" loading="lazy"></figure>
+        <figure class="portrait portrait--front"><img src="assets/images/photo-12.jpg" alt="Cô dâu chú rể trong trang phục cưới" loading="lazy"></figure>
+        <div class="portrait-pair__words"><span>Our</span><strong>Forever</strong><small>begins here</small></div>
+      </div>
+    </section>
+
+    <section class="countdown section--dark" aria-label="Đếm ngược đến ngày cưới nhà gái">
+      <div class="countdown__inner reveal">
+        <span class="eyebrow">Đếm ngược ngày chung đôi</span>
+        <h2>18 · 10 · 2026</h2>
+        <div class="timer" id="timer" aria-live="polite">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section" id="events">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Wedding celebrations</span>
+        <h2>Hẹn gặp bạn tại ngày vui</h2>
+        <p>Hai gia đình thân mời bạn đến chung vui cùng cô dâu và chú rể.</p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card event-card--bride reveal">
+          <div class="event-card__image"><img src="assets/images/photo-09.jpg" alt="Cô dâu chú rể trong trang phục áo dài" loading="lazy"></div>
+          <div class="event-card__body">
+            <span class="event-card__label">Nhà gái</span>
+            <h3>Tiệc cưới nhà gái</h3>
+            <time datetime="2026-10-18T11:00:00+07:00"><b>11:00</b> · Chủ Nhật<br>18 tháng 10, 2026</time>
+            <p>Tổ 5, Khu phố Đồng Tâm,<br>phường Tân Khai, TP. Đồng Nai</p>
+            <a class="button button--solid" href="https://www.google.com/maps?q=11.514694,106.576389" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Xem chỉ đường
+            </a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <div class="event-card__image"><img src="assets/images/photo-04.jpg" alt="Cô dâu chú rể bên sảnh cưới" loading="lazy"></div>
+          <div class="event-card__body">
+            <span class="event-card__label">Nhà trai</span>
+            <h3>Tiệc cưới nhà trai</h3>
+            <time datetime="2026-10-25T11:00:00+07:00"><b>11:00</b> · Chủ Nhật<br>25 tháng 10, 2026</time>
+            <p>Tổ 4, Khu phố Đồng Tâm,<br>phường Tân Khai, TP. Đồng Nai</p>
+            <span class="location-note">Trân trọng đón tiếp</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote reveal" aria-label="Lời nhắn">
+      <img src="assets/images/photo-07.jpg" alt="Cô dâu chú rể trao hoa trên bậc thềm" loading="lazy">
+      <div class="quote__shade"></div>
+      <blockquote>“Tình yêu không chỉ là nhìn nhau,<br>mà là cùng nhau nhìn về một hướng.”</blockquote>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Our moments</span>
+        <h2>Album của chúng mình</h2>
+        <p>Những khoảnh khắc dịu dàng trước khi hành trình trăm năm bắt đầu.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-item--tall reveal" data-src="assets/images/photo-02.jpg" aria-label="Xem ảnh 1"><img src="assets/images/photo-02.jpg" alt="Cặp đôi giữa vườn hoa giấy" loading="lazy"></button>
+        <button class="gallery-item reveal" data-src="assets/images/photo-03.jpg" aria-label="Xem ảnh 2"><img src="assets/images/photo-03.jpg" alt="Cặp đôi trên thảm cỏ" loading="lazy"></button>
+        <button class="gallery-item gallery-item--tall reveal" data-src="assets/images/photo-05.jpg" aria-label="Xem ảnh 3"><img src="assets/images/photo-05.jpg" alt="Cặp đôi nắm tay trên thảm cỏ" loading="lazy"></button>
+        <button class="gallery-item reveal" data-src="assets/images/photo-10.jpg" aria-label="Xem ảnh 4"><img src="assets/images/photo-10.jpg" alt="Cặp đôi bên cổng tre" loading="lazy"></button>
+        <button class="gallery-item reveal" data-src="assets/images/photo-11.jpg" aria-label="Xem ảnh 5"><img src="assets/images/photo-11.jpg" alt="Cặp đôi áo dài giữa vườn xanh" loading="lazy"></button>
+        <button class="gallery-item gallery-item--wide reveal" data-src="assets/images/photo-01.jpg" aria-label="Xem ảnh 6"><img src="assets/images/photo-01.jpg" alt="Cặp đôi áo dài dưới giàn hoa trắng" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="closing">
+      <img src="assets/images/photo-08.jpg" alt="Cô dâu chú rể nắm tay" loading="lazy">
+      <div class="closing__shade"></div>
+      <div class="closing__content reveal">
+        <span class="eyebrow">Thank you</span>
+        <h2>Hẹn gặp bạn<br>trong ngày vui</h2>
+        <p>An <i>&</i> Thảo</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="monogram" href="#top">A<span>&</span>T</a>
+    <p>18.10.2026 · 25.10.2026</p>
+    <small>Made with love</small>
+  </footer>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Bật hoặc tắt nhạc" title="Bật hoặc tắt nhạc">
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label">Nhạc</span>
+  </button>
+  <audio id="bgMusic" src="assets/audio/beautiful-in-white.mp3" loop preload="auto"></audio>
+
+  <dialog class="lightbox" id="lightbox">
+    <button type="button" id="closeLightbox" aria-label="Đóng ảnh">×</button>
+    <img id="lightboxImage" alt="Ảnh cưới phóng lớn">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
