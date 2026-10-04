@@ -39,27 +39,28 @@ musicToggle.addEventListener('click', () => {
   }
 });
 
-const weddingDate = new Date('2026-10-18T11:00:00+07:00').getTime();
-const timerParts = {
-  days: document.getElementById('days'),
-  hours: document.getElementById('hours'),
-  minutes: document.getElementById('minutes'),
-  seconds: document.getElementById('seconds')
-};
+const countdowns = [...document.querySelectorAll('[data-countdown]')].map((timer) => ({
+  timer,
+  target: new Date(timer.dataset.countdown).getTime()
+}));
 
-function updateCountdown() {
-  const distance = Math.max(0, weddingDate - Date.now());
-  const day = Math.floor(distance / 86400000);
-  const hour = Math.floor((distance % 86400000) / 3600000);
-  const minute = Math.floor((distance % 3600000) / 60000);
-  const second = Math.floor((distance % 60000) / 1000);
-  timerParts.days.textContent = String(day).padStart(2, '0');
-  timerParts.hours.textContent = String(hour).padStart(2, '0');
-  timerParts.minutes.textContent = String(minute).padStart(2, '0');
-  timerParts.seconds.textContent = String(second).padStart(2, '0');
+function updateCountdowns() {
+  countdowns.forEach(({ timer, target }) => {
+    const distance = Math.max(0, target - Date.now());
+    const values = {
+      days: Math.floor(distance / 86400000),
+      hours: Math.floor((distance % 86400000) / 3600000),
+      minutes: Math.floor((distance % 3600000) / 60000),
+      seconds: Math.floor((distance % 60000) / 1000)
+    };
+
+    Object.entries(values).forEach(([unit, value]) => {
+      timer.querySelector(`[data-unit="${unit}"]`).textContent = String(value).padStart(2, '0');
+    });
+  });
 }
-updateCountdown();
-setInterval(updateCountdown, 1000);
+updateCountdowns();
+setInterval(updateCountdowns, 1000);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

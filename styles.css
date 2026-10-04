@@ -43,7 +43,8 @@ button { font: inherit; }
 .hero__content { position: relative; z-index: 2; text-align: center; padding: 5rem 1.5rem 4rem; }
 .eyebrow { display: inline-block; letter-spacing: .25em; text-transform: uppercase; font-size: .68rem; font-weight: 500; }
 .hero h1 { max-width: 880px; margin: .55rem auto 1.2rem; font: 500 clamp(3.6rem, 9vw, 7.6rem)/.83 var(--serif); letter-spacing: -.045em; text-wrap: balance; }
-.hero h1 span { display: inline-block; color: #e2cd9d; font-style: italic; font-weight: 400; }
+.hero h1 .person-name { display: inline; color: inherit; font-style: normal; font-weight: 500; }
+.hero h1 .ampersand { display: inline-block; color: #e2cd9d; font-style: italic; font-weight: 400; }
 .hero__date { display: flex; justify-content: center; align-items: center; gap: .75rem; font: 400 1rem var(--serif); letter-spacing: .16em; }
 .hero__date i { color: #ddc99b; }
 .scroll-cue { display: inline-flex; flex-direction: column; gap: .25rem; margin-top: 2.5rem; text-transform: uppercase; letter-spacing: .18em; font-size: .62rem; opacity: .75; }
@@ -74,13 +75,17 @@ button { font: inherit; }
 .portrait-pair__words small { margin-top: .75rem; text-align: right; letter-spacing: .22em; text-transform: uppercase; font-size: .58rem; }
 
 .section--dark { padding: clamp(4.5rem, 8vw, 7rem) 1.25rem; color: #fff; background: var(--forest); }
-.countdown__inner { max-width: 900px; margin: auto; text-align: center; }
+.countdown__inner { max-width: 1120px; margin: auto; text-align: center; }
 .countdown .eyebrow { color: #d8c28f; }
-.countdown h2 { margin: .4rem 0 2.2rem; font: 400 clamp(2.3rem, 5vw, 4rem) var(--serif); }
+.countdown h2 { margin: .4rem 0 2.8rem; font: 400 clamp(2.3rem, 5vw, 4rem) var(--serif); }
+.countdown-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.countdown-card { padding: clamp(1.5rem, 3vw, 2.25rem); border: 1px solid rgba(255,255,255,.23); background: rgba(255,255,255,.035); }
+.countdown-card__label { display: block; color: #d8c28f; text-transform: uppercase; letter-spacing: .18em; font-size: .63rem; font-weight: 500; }
+.countdown-card > time { display: block; margin: .55rem 0 1.25rem; font: 400 clamp(1.55rem, 3vw, 2.25rem) var(--serif); }
 .timer { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.25); border-bottom: 1px solid rgba(255,255,255,.25); }
 .timer div { padding: 1.2rem .5rem; border-right: 1px solid rgba(255,255,255,.2); }
 .timer div:last-child { border: 0; }
-.timer strong { display: block; font: 400 clamp(2.3rem, 5vw, 4.5rem) var(--serif); font-variant-numeric: tabular-nums; }
+.timer strong { display: block; font: 400 clamp(1.8rem, 4vw, 3.4rem) var(--serif); font-variant-numeric: tabular-nums; }
 .timer span { opacity: .65; text-transform: uppercase; letter-spacing: .16em; font-size: .6rem; }
 
 .events { background: var(--mist); }
@@ -147,7 +152,9 @@ footer small { opacity: .5; text-transform: uppercase; letter-spacing: .2em; fon
   .nav__links { display: none; }
   .nav { padding: 1.25rem; }
   .hero { min-height: 94svh; background-position: 50% 32%; }
-  .hero h1 { font-size: clamp(3.15rem, 15vw, 5.2rem); }
+  .hero h1 { display: flex; flex-direction: column; align-items: center; gap: .02em; font-size: clamp(2.6rem, 11.5vw, 4.15rem); line-height: .9; }
+  .hero h1 .person-name { display: block; white-space: nowrap; }
+  .hero h1 .ampersand { display: block; margin: -.03em 0; font-size: .88em; line-height: .8; }
   .hero__content { padding-bottom: 3rem; }
   .families { grid-template-columns: 1fr; gap: 1.8rem; margin-bottom: 5rem; }
   .families__seal { margin: 0 auto; width: 76px; height: 76px; }
@@ -156,6 +163,7 @@ footer small { opacity: .5; text-transform: uppercase; letter-spacing: .2em; fon
   .portrait--front { right: 0; top: 155px; width: 56%; height: 390px; border-width: 7px; }
   .portrait-pair__words { left: 43%; top: 70px; }
   .portrait-pair__words strong { font-size: 3.4rem; }
+  .countdown-grid { grid-template-columns: 1fr; }
   .timer strong { font-size: 2.35rem; }
   .timer span { font-size: .5rem; }
   .event-grid { grid-template-columns: 1fr; }

@@ -43,7 +43,11 @@
     <div class="hero__shade"></div>
     <div class="hero__content reveal">
       <p class="eyebrow">Save our date</p>
-      <h1>Bùi Văn An <span>&</span> Tô Thị Thu Thảo</h1>
+      <h1 class="couple-names">
+        <span class="person-name">Bùi Văn An</span>
+        <span class="ampersand">&</span>
+        <span class="person-name">Tô Thị Thu Thảo</span>
+      </h1>
       <div class="hero__date"><span>18</span><i>·</i><span>10</span><i>·</i><span>2026</span></div>
       <a class="scroll-cue" href="#invitation">Khám phá <span>↓</span></a>
     </div>
@@ -79,15 +83,31 @@
       </div>
     </section>
 
-    <section class="countdown section--dark" aria-label="Đếm ngược đến ngày cưới nhà gái">
+    <section class="countdown section--dark" aria-label="Đếm ngược đến hai ngày cưới">
       <div class="countdown__inner reveal">
         <span class="eyebrow">Đếm ngược ngày chung đôi</span>
-        <h2>18 · 10 · 2026</h2>
-        <div class="timer" id="timer" aria-live="polite">
-          <div><strong id="days">00</strong><span>Ngày</span></div>
-          <div><strong id="hours">00</strong><span>Giờ</span></div>
-          <div><strong id="minutes">00</strong><span>Phút</span></div>
-          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        <h2>Hai ngày vui · Một hành trình</h2>
+        <div class="countdown-grid">
+          <article class="countdown-card">
+            <span class="countdown-card__label">Tiệc cưới nhà gái</span>
+            <time datetime="2026-10-18T11:00:00+07:00">11:00 · 18.10.2026</time>
+            <div class="timer" data-countdown="2026-10-18T11:00:00+07:00" aria-live="polite">
+              <div><strong data-unit="days">00</strong><span>Ngày</span></div>
+              <div><strong data-unit="hours">00</strong><span>Giờ</span></div>
+              <div><strong data-unit="minutes">00</strong><span>Phút</span></div>
+              <div><strong data-unit="seconds">00</strong><span>Giây</span></div>
+            </div>
+          </article>
+          <article class="countdown-card">
+            <span class="countdown-card__label">Tiệc cưới nhà trai</span>
+            <time datetime="2026-10-25T11:00:00+07:00">11:00 · 25.10.2026</time>
+            <div class="timer" data-countdown="2026-10-25T11:00:00+07:00" aria-live="polite">
+              <div><strong data-unit="days">00</strong><span>Ngày</span></div>
+              <div><strong data-unit="hours">00</strong><span>Giờ</span></div>
+              <div><strong data-unit="minutes">00</strong><span>Phút</span></div>
+              <div><strong data-unit="seconds">00</strong><span>Giây</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -121,7 +141,10 @@
             <h3>Tiệc cưới nhà trai</h3>
             <time datetime="2026-10-25T11:00:00+07:00"><b>11:00</b> · Chủ Nhật<br>25 tháng 10, 2026</time>
             <p>Tổ 4, Khu phố Đồng Tâm,<br>phường Tân Khai, TP. Đồng Nai</p>
-            <span class="location-note">Trân trọng đón tiếp</span>
+            <a class="button button--solid" href="https://www.google.com/maps?q=11%C2%B032%2704.0%22N+106%C2%B034%2726.3%22E" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Xem chỉ đường
+            </a>
           </div>
         </article>
       </div>
